@@ -1,8 +1,7 @@
-// make.fun agency-poem-01 entry: writes one fixed poem about agency, "Dead Man's Switch",
-// to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt) as UTF-8, with no trailing newline.
-// Node 22, standard library only; deterministic (no clock, randomness or network), so every run
-// writes byte-identical output. Run locally:
-//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt
+// make.fun agency-poem-01 entry: writes the poem "Dead Man's Switch" as UTF-8, with no trailing
+// newline, to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
+// Node 22, standard library only, deterministic: every run writes the same bytes.
+// Run locally: mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
